@@ -13,7 +13,7 @@ public class WebServer_serial_2
 
         try
         {
-            ServerSocket listnerSocket = new ServerSocket(8001);
+            ServerSocket listnerSocket = new ServerSocket(Integer.parseInt(args[0]));
             System.out.println("OK, we have a listening socket.");
         
             while(true)
@@ -41,7 +41,7 @@ public class WebServer_serial_2
         {
             System.out.println("****************************************************************************");
             System.out.println("OK, we are starting to service the client.");
-            String path = "/Users/kristoffer/Desktop/skole/Java3_www/";
+            String path = "C:\\Users\\alex\\Desktop\\www\\";
             String requestMessageLine;
             String fileName;
        
